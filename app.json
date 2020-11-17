@@ -13,14 +13,24 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "description": "",
+    "android": {
+      "package": "com.luciaarena.empoderate",
+      "permissions": [
+        "CAMERA_ROLL",
+        "READ_EXERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "LOCATION", //Para expo
+        "ACCESS_COARSE_LOCATION", //para android
+        "ACCESS_FINE_LOCATION"
+      ]
     }
   }
 }
